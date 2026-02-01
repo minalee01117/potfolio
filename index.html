@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity | Creative Developer Portfolio</title>
+    <meta name="description"
+        content="Creative developer specializing in immersive web experiences and futuristic interfaces.">
+
+    <!-- Scripts & Styles -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d7ff2",
+                        "accent-purple": "#a855f7",
+                        "background-dark": "#050505",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: { "lg": "1rem", "xl": "1.5rem", "2xl": "2rem" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-dark font-display text-white min-h-screen relative overflow-x-hidden pb-24 lg:pb-0">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Noise Texture Overlay -->
+    <div class="noise-bg"></div>
+
+    <!-- Top Navigation -->
+    <nav
+        class="sticky top-0 z-50 flex items-center justify-between p-6 bg-background-dark/80 backdrop-blur-md container mx-auto">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                <span class="material-symbols-outlined text-white text-[20px]">code</span>
+            </div>
+            <span class="font-bold tracking-tight text-xl">ANTIGRAVITY</span>
+        </div>
+        <div class="hidden lg:flex items-center gap-10">
+            <a href="#hero" class="text-sm font-medium hover:text-primary transition-colors">Home</a>
+            <a href="#work" class="text-sm font-medium hover:text-primary transition-colors">Work</a>
+            <a href="#skills" class="text-sm font-medium hover:text-primary transition-colors">About</a>
+            <a href="#contact"
+                class="bg-white text-black px-5 py-2 rounded-full text-sm font-bold hover:bg-primary hover:text-white transition-all">Let's
+                Talk</a>
+        </div>
+        <div class="flex lg:hidden items-center gap-2 bg-primary/10 px-3 py-1 rounded-full border border-primary/20">
+            <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+            <span class="text-[10px] font-bold text-primary uppercase tracking-widest">Available</span>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-6 relative z-10">
+        <!-- Hero Section -->
+        <section id="hero" class="py-16 lg:py-24 flex flex-col lg:flex-row items-center gap-12 lg:min-h-[80vh]">
+            <div class="flex-1 text-center lg:text-left">
+                <div
+                    class="reveal inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 mb-6">
+                    <span class="text-xs font-bold tracking-widest text-primary uppercase">Creative Developer</span>
+                </div>
+                <h1 class="reveal stagger-1 text-5xl lg:text-8xl font-extrabold tracking-tight leading-[1.05] mb-6">
+                    Crafting <span class="text-primary italic">Digital</span> <br>Experiences.
+                </h1>
+                <p
+                    class="reveal stagger-2 text-slate-400 text-lg lg:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 mb-10">
+                    I blend minimalist design with experimental code to build immersive products that push the
+                    boundaries of the web.
+                </p>
+                <div class="reveal stagger-3 flex flex-wrap justify-center lg:justify-start gap-4">
+                    <a href="#work"
+                        class="bg-primary text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 glow-blue hover:scale-105 transition-transform active:scale-95">
+                        View Projects <span class="material-symbols-outlined">arrow_downward</span>
+                    </a>
+                    <a href="#contact"
+                        class="glass-card px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-colors">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex-1 relative flex justify-center items-center py-10">
+                <!-- Abstract Sphere Visual -->
+                <div class="reveal stagger-1 relative w-64 h-64 lg:w-96 lg:h-96">
+                    <div class="absolute inset-0 sphere-gradient rounded-full blur-3xl opacity-40 sphere-animate"></div>
+                    <div
+                        class="relative w-full h-full sphere-gradient rounded-full border border-white/10 shadow-2xl flex items-center justify-center overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent">
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover opacity-60 mix-blend-overlay" alt="Visual">
+                    </div>
+                </div>
+                <!-- Stats Overlay -->
+                <div
+                    class="reveal stagger-3 absolute -bottom-5 -right-5 lg:bottom-10 lg:right-10 glass-card p-6 rounded-2xl glow-blue">
+                    <div class="text-3xl font-bold text-primary italic">5+ Years</div>
+                    <div class="text-xs uppercase tracking-widest text-slate-400 font-bold">Of Engineering Bliss</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Work Section (Bento) -->
+        <section id="work" class="py-20">
+            <div class="flex flex-col lg:flex-row justify-between items-end mb-12 gap-4">
+                <div class="reveal text-center lg:text-left">
+                    <h2 class="text-3xl lg:text-5xl font-bold tracking-tight">Selected Works</h2>
+                    <p class="text-slate-400 mt-2">Projects that define my journey.</p>
+                </div>
+                <div class="reveal stagger-1 hidden lg:block">
+                    <span class="text-primary text-xs font-bold uppercase tracking-[0.3em]">Curated Archive</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Large Card -->
+                <div class="reveal lg:col-span-2 aspect-[16/10] glass-card rounded-2xl overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        style="background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200');">
+                    </div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                        <span class="text-xs font-bold uppercase tracking-widest text-primary mb-2">Fintech /
+                            2024</span>
+                        <h3 class="text-3xl lg:text-4xl font-bold">Nebula OS v2</h3>
+                        <p
+                            class="text-sm text-slate-300 mt-2 max-w-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            A decentralized finance platform with a futuristic interface and high-performance metrics.
+                        </p>
+                    </div>
+                    <div
+                        class="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity translate-x-4 group-hover:translate-x-0 transition-transform duration-300">
+                        <button class="w-12 h-12 bg-white text-black rounded-full flex items-center justify-center">
+                            <span class="material-symbols-outlined">north_east</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Square Card 1 -->
+                <div class="reveal mt-0 lg:mt-10 aspect-square glass-card rounded-2xl overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        style="background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800');">
+                    </div>
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end">
+                        <h3 class="text-xl font-bold">Aether Analytics</h3>
+                    </div>
+                </div>
+
+                <!-- Square Card 2 -->
+                <div class="reveal aspect-square glass-card rounded-2xl overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        style="background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800');">
+                    </div>
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end">
+                        <h3 class="text-xl font-bold">Lumina Dashboard</h3>
+                    </div>
+                </div>
+
+                <!-- Wide Card -->
+                <div class="reveal lg:col-span-2 aspect-[21/9] glass-card rounded-2xl overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                        style="background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1200');">
+                    </div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                        <h3 class="text-2xl font-bold">E-commerce Evolution</h3>
+                        <p class="text-sm text-slate-400">Revolutionizing online shopping experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section id="skills" class="py-20">
+            <div class="reveal flex items-center justify-between mb-10">
+                <h2 class="text-3xl font-bold tracking-tight">Expertise</h2>
+                <div class="h-px flex-1 bg-white/10 mx-6 hidden md:block"></div>
+                <span class="text-xs text-slate-500 uppercase tracking-widest whitespace-nowrap">Technical
+                    Superpowers</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Skill Capsules -->
+                <div
+                    class="reveal stagger-1 glass-card p-6 rounded-2xl border-l-4 border-l-primary flex flex-col gap-4">
+                    <span class="material-symbols-outlined text-primary text-3xl">terminal</span>
+                    <div>
+                        <h4 class="font-bold text-lg">Frontend</h4>
+                        <p class="text-xs text-slate-500 mt-1">React, Next.js, Framer Motion</p>
+                    </div>
+                </div>
+                <div
+                    class="reveal stagger-2 glass-card p-6 rounded-2xl border-l-4 border-l-accent-purple flex flex-col gap-4">
+                    <span class="material-symbols-outlined text-accent-purple text-3xl">database</span>
+                    <div>
+                        <h4 class="font-bold text-lg">Backend</h4>
+                        <p class="text-xs text-slate-500 mt-1">Node.js, PostgreSQL, Redis</p>
+                    </div>
+                </div>
+                <div class="reveal stagger-3 glass-card p-6 rounded-2xl border-l-4 border-l-white flex flex-col gap-4">
+                    <span class="material-symbols-outlined text-white text-3xl">token</span>
+                    <div>
+                        <h4 class="font-bold text-lg">Web3</h4>
+                        <p class="text-xs text-slate-500 mt-1">Solidity, Ethers.js, Wagmi</p>
+                    </div>
+                </div>
+                <div
+                    class="reveal stagger-4 glass-card p-6 rounded-2xl border-l-4 border-l-primary flex flex-col gap-4">
+                    <span class="material-symbols-outlined text-primary text-3xl">palette</span>
+                    <div>
+                        <h4 class="font-bold text-lg">Design</h4>
+                        <p class="text-xs text-slate-500 mt-1">Figma, Motion Design, UI/UX</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal mt-12 flex flex-wrap gap-2">
+                <span
+                    class="px-4 py-2 rounded-full border border-primary/30 bg-primary/5 text-primary text-xs font-bold glow-blue">React.js</span>
+                <span
+                    class="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-slate-400 text-xs font-bold">TypeScript</span>
+                <span
+                    class="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-slate-400 text-xs font-bold">Three.js</span>
+                <span
+                    class="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-slate-400 text-xs font-bold">Tailwind</span>
+                <span
+                    class="px-4 py-2 rounded-full border border-accent-purple/30 bg-accent-purple/5 text-accent-purple text-xs font-bold glow-purple">Next.js</span>
+                <span
+                    class="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-slate-400 text-xs font-bold">Node.js</span>
+                <span
+                    class="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-slate-400 text-xs font-bold">SwiftUI</span>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 mb-10">
+            <div class="reveal glass-card rounded-[2rem] p-8 lg:p-20 text-center relative overflow-hidden">
+                <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-primary/20 blur-[100px] rounded-full"></div>
+                <div class="absolute -top-20 -left-20 w-80 h-80 bg-accent-purple/10 blur-[100px] rounded-full"></div>
+
+                <h2 class="text-4xl lg:text-7xl font-extrabold tracking-tight mb-6">
+                    Ready to start the <br><span class="text-primary italic">conversation?</span>
+                </h2>
+                <p class="text-slate-400 text-lg mb-12 max-w-xl mx-auto">
+                    Whether you have a specific project in mind or just want to explore possibilities, I'm here to build
+                    the extraordinary.
+                </p>
+                <div class="flex flex-col md:flex-row justify-center gap-6">
+                    <button
+                        class="bg-white text-black px-10 py-5 rounded-2xl font-black text-xl hover:scale-105 transition-transform active:scale-95 shadow-2xl">
+                        hello@antigravity.dev
+                    </button>
+                    <div class="flex justify-center items-center gap-6">
+                        <a href="#"
+                            class="w-14 h-14 rounded-2xl glass-card flex items-center justify-center hover:text-primary transition-colors">
+                            <span class="material-symbols-outlined">alternate_email</span>
+                        </a>
+                        <a href="#"
+                            class="w-14 h-14 rounded-2xl glass-card flex items-center justify-center hover:text-primary transition-colors">
+                            <span class="material-symbols-outlined">hub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Status (Desktop) -->
+    <footer class="hidden lg:block border-t border-white/5 py-10">
+        <div
+            class="container mx-auto px-6 flex justify-between items-center text-xs text-slate-500 uppercase tracking-widest font-bold">
+            <div>© 2026 Antigravity. Built with Passion.</div>
+            <div class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-green-500 rounded-full glow-blue"></span>
+                Currently available for projects
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation (Floating Bar) -->
+    <div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-full px-6 flex justify-center lg:hidden">
+        <div class="glass-card rounded-full p-2 flex items-center gap-2 shadow-2xl border border-white/10">
+            <a href="#hero"
+                class="nav-item-active w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full glow-blue">
+                <span class="material-symbols-outlined">home</span>
+            </a>
+            <a href="#work" class="w-12 h-12 flex items-center justify-center opacity-40">
+                <span class="material-symbols-outlined">grid_view</span>
+            </a>
+            <a href="#skills" class="w-12 h-12 flex items-center justify-center opacity-40">
+                <span class="material-symbols-outlined">person</span>
+            </a>
+            <a href="#contact" class="w-12 h-12 flex items-center justify-center opacity-40">
+                <span class="material-symbols-outlined">chat_bubble</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Main JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
