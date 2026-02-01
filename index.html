@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="ko" class="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antigravity | Creative Developer Portfolio</title>
-    <meta name="description"
-        content="Creative developer specializing in immersive web experiences and futuristic interfaces.">
+    <title>이민아 | Lee Mina Portfolio</title>
+    <meta name="description" content="2006년생 크리에이티브 개발자 이민아의 포트폴리오입니다. 아름답고 몰입감 있는 웹 경험을 만듭니다.">
 
     <!-- Scripts & Styles -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet">
@@ -22,14 +22,15 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#0d7ff2",
-                        "accent-purple": "#a855f7",
-                        "background-dark": "#050505",
+                        "primary": "#ff8fa3",
+                        "accent-purple": "#c084fc",
+                        "background-dark": "#0a0a0c",
                     },
                     fontFamily: {
-                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "serif": ["Georgia", "serif"]
                     },
-                    borderRadius: { "lg": "1rem", "xl": "1.5rem", "2xl": "2rem" },
+                    borderRadius: { "lg": "1rem", "xl": "1.5rem", "2xl": "2.5rem", "3xl": "3.5rem" },
                 },
             },
         }
@@ -48,230 +49,236 @@
     <nav
         class="sticky top-0 z-50 flex items-center justify-between p-6 bg-background-dark/80 backdrop-blur-md container mx-auto">
         <div class="flex items-center gap-2">
-            <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span class="material-symbols-outlined text-white text-[20px]">code</span>
+            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center shadow-lg shadow-primary/20">
+                <span class="material-symbols-outlined text-white text-[18px]">favorite</span>
             </div>
-            <span class="font-bold tracking-tight text-xl">ANTIGRAVITY</span>
+            <span class="font-bold tracking-tight text-xl">MINA<span class="text-primary">.</span></span>
         </div>
         <div class="hidden lg:flex items-center gap-10">
             <a href="#hero" class="text-sm font-medium hover:text-primary transition-colors">Home</a>
             <a href="#work" class="text-sm font-medium hover:text-primary transition-colors">Work</a>
             <a href="#skills" class="text-sm font-medium hover:text-primary transition-colors">About</a>
             <a href="#contact"
-                class="bg-white text-black px-5 py-2 rounded-full text-sm font-bold hover:bg-primary hover:text-white transition-all">Let's
-                Talk</a>
+                class="bg-white text-black px-6 py-2 rounded-full text-sm font-bold hover:bg-primary hover:text-white transition-all">Contact</a>
         </div>
         <div class="flex lg:hidden items-center gap-2 bg-primary/10 px-3 py-1 rounded-full border border-primary/20">
-            <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-            <span class="text-[10px] font-bold text-primary uppercase tracking-widest">Available</span>
+            <div class="w-1.5 h-1.5 bg-primary rounded-full animate-ping"></div>
+            <span class="text-[9px] font-bold text-primary uppercase tracking-widest">Active 2006</span>
         </div>
     </nav>
 
     <main class="container mx-auto px-6 relative z-10">
         <!-- Hero Section -->
-        <section id="hero" class="py-16 lg:py-24 flex flex-col lg:flex-row items-center gap-12 lg:min-h-[80vh]">
+        <section id="hero" class="py-16 lg:py-24 flex flex-col lg:flex-row items-center gap-12 lg:min-h-[85vh]">
             <div class="flex-1 text-center lg:text-left">
                 <div
-                    class="reveal inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 mb-6">
-                    <span class="text-xs font-bold tracking-widest text-primary uppercase">Creative Developer</span>
+                    class="reveal inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 mb-8">
+                    <span class="text-xs font-bold tracking-widest text-primary uppercase italic-text">Creative
+                        Visionary</span>
                 </div>
-                <h1 class="reveal stagger-1 text-5xl lg:text-8xl font-extrabold tracking-tight leading-[1.05] mb-6">
-                    Crafting <span class="text-primary italic">Digital</span> <br>Experiences.
+                <h1 class="reveal stagger-1 text-6xl lg:text-8xl font-extrabold tracking-tight leading-[1.05] mb-8">
+                    Beautiful <span class="text-primary italic-text">Designs</span> <br>Born in <span
+                        class="text-accent-purple">2006</span>.
                 </h1>
                 <p
-                    class="reveal stagger-2 text-slate-400 text-lg lg:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 mb-10">
-                    I blend minimalist design with experimental code to build immersive products that push the
-                    boundaries of the web.
+                    class="reveal stagger-2 text-slate-400 text-lg lg:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 mb-12">
+                    안녕하세요, 개발하는 이민아입니다. 섬세한 감각과 기술적인 코드로 세상에 없던 아름다운 웹 경험을 만듭니다.
                 </p>
-                <div class="reveal stagger-3 flex flex-wrap justify-center lg:justify-start gap-4">
+                <div class="reveal stagger-3 flex flex-wrap justify-center lg:justify-start gap-5">
                     <a href="#work"
-                        class="bg-primary text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 glow-blue hover:scale-105 transition-transform active:scale-95">
-                        View Projects <span class="material-symbols-outlined">arrow_downward</span>
+                        class="bg-primary text-white px-10 py-4.5 rounded-2xl font-bold flex items-center gap-2 glow-blue hover:scale-105 transition-transform active:scale-95">
+                        My Projects <span class="material-symbols-outlined">arrow_downward</span>
                     </a>
                     <a href="#contact"
-                        class="glass-card px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-colors">
-                        Get in Touch
+                        class="glass-card px-10 py-4.5 rounded-2xl font-bold hover:bg-white/10 transition-colors">
+                        Say Hello
                     </a>
                 </div>
             </div>
 
             <div class="flex-1 relative flex justify-center items-center py-10">
-                <!-- Abstract Sphere Visual -->
-                <div class="reveal stagger-1 relative w-64 h-64 lg:w-96 lg:h-96">
-                    <div class="absolute inset-0 sphere-gradient rounded-full blur-3xl opacity-40 sphere-animate"></div>
+                <!-- Abstract Ethereal Sphere -->
+                <div class="reveal stagger-1 relative w-72 h-72 lg:w-[450px] lg:h-[450px]">
+                    <div class="absolute inset-0 sphere-gradient rounded-full blur-[80px] opacity-40 sphere-animate">
+                    </div>
                     <div
-                        class="relative w-full h-full sphere-gradient rounded-full border border-white/10 shadow-2xl flex items-center justify-center overflow-hidden">
+                        class="relative w-full h-full sphere-gradient rounded-full border border-white/5 shadow-3xl flex items-center justify-center overflow-hidden">
                         <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent">
                         </div>
-                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800"
-                            class="w-full h-full object-cover opacity-60 mix-blend-overlay" alt="Visual">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover opacity-50 mix-blend-soft-light"
+                            alt="Aesthetic Background">
                     </div>
                 </div>
-                <!-- Stats Overlay -->
+                <!-- Mini Bio Overlay -->
                 <div
-                    class="reveal stagger-3 absolute -bottom-5 -right-5 lg:bottom-10 lg:right-10 glass-card p-6 rounded-2xl glow-blue">
-                    <div class="text-3xl font-bold text-primary italic">5+ Years</div>
-                    <div class="text-xs uppercase tracking-widest text-slate-400 font-bold">Of Engineering Bliss</div>
+                    class="reveal stagger-3 absolute -bottom-5 -left-5 lg:bottom-10 lg:left-0 glass-card p-8 rounded-[2.5rem] glow-purple max-w-[240px]">
+                    <div class="text-3xl font-bold text-accent-purple italic-text">Lee Mina</div>
+                    <div class="text-[11px] uppercase tracking-widest text-slate-400 font-bold mt-2">Born to Create ·
+                        2006</div>
                 </div>
             </div>
         </section>
 
-        <!-- Selected Work Section (Bento) -->
-        <section id="work" class="py-20">
-            <div class="flex flex-col lg:flex-row justify-between items-end mb-12 gap-4">
+        <!-- Selected Work Section -->
+        <section id="work" class="py-24">
+            <div class="flex flex-col lg:flex-row justify-between items-end mb-16 gap-6">
                 <div class="reveal text-center lg:text-left">
-                    <h2 class="text-3xl lg:text-5xl font-bold tracking-tight">Selected Works</h2>
-                    <p class="text-slate-400 mt-2">Projects that define my journey.</p>
+                    <h2 class="text-4xl lg:text-6xl font-bold tracking-tight">Ethereal Gallery</h2>
+                    <p class="text-slate-400 mt-3 text-lg">섬세함으로 빚어낸 프로젝트들입니다.</p>
                 </div>
                 <div class="reveal stagger-1 hidden lg:block">
-                    <span class="text-primary text-xs font-bold uppercase tracking-[0.3em]">Curated Archive</span>
+                    <span class="text-primary text-xs font-bold uppercase tracking-[0.4em]">Personal Collection</span>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Large Card -->
-                <div class="reveal lg:col-span-2 aspect-[16/10] glass-card rounded-2xl overflow-hidden relative group">
-                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                        style="background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200');">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8">
+                <!-- Project 1 (Large) -->
+                <div
+                    class="reveal lg:col-span-8 aspect-[16/9] glass-card rounded-[3rem] overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110"
+                        style="background-image: linear-gradient(to bottom, transparent, rgba(10,10,12,0.9)), url('https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?auto=format&fit=crop&q=80&w=1200');">
                     </div>
-                    <div class="absolute inset-0 p-8 flex flex-col justify-end">
-                        <span class="text-xs font-bold uppercase tracking-widest text-primary mb-2">Fintech /
+                    <div class="absolute inset-0 p-10 flex flex-col justify-end">
+                        <span class="text-xs font-bold uppercase tracking-widest text-primary mb-3">UI/UX Design /
                             2024</span>
-                        <h3 class="text-3xl lg:text-4xl font-bold">Nebula OS v2</h3>
+                        <h3 class="text-4xl font-bold">Aesthetic Cloud</h3>
                         <p
-                            class="text-sm text-slate-300 mt-2 max-w-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            A decentralized finance platform with a futuristic interface and high-performance metrics.
+                            class="text-sm text-slate-300 mt-3 max-w-md opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            부드러운 컬러와 유려한 인터랙션이 돋보이는 클라우드 서비스 디자인 프로젝트입니다.
                         </p>
                     </div>
                     <div
-                        class="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity translate-x-4 group-hover:translate-x-0 transition-transform duration-300">
-                        <button class="w-12 h-12 bg-white text-black rounded-full flex items-center justify-center">
+                        class="absolute top-8 right-8 opacity-0 group-hover:opacity-100 transition-all translate-x-4 group-hover:translate-x-0">
+                        <button
+                            class="w-14 h-14 bg-white text-black rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                             <span class="material-symbols-outlined">north_east</span>
                         </button>
                     </div>
                 </div>
 
-                <!-- Square Card 1 -->
-                <div class="reveal mt-0 lg:mt-10 aspect-square glass-card rounded-2xl overflow-hidden relative group">
-                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                        style="background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800');">
-                    </div>
-                    <div class="absolute inset-0 p-6 flex flex-col justify-end">
-                        <h3 class="text-xl font-bold">Aether Analytics</h3>
-                    </div>
-                </div>
-
-                <!-- Square Card 2 -->
-                <div class="reveal aspect-square glass-card rounded-2xl overflow-hidden relative group">
-                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                        style="background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800');">
-                    </div>
-                    <div class="absolute inset-0 p-6 flex flex-col justify-end">
-                        <h3 class="text-xl font-bold">Lumina Dashboard</h3>
-                    </div>
-                </div>
-
-                <!-- Wide Card -->
-                <div class="reveal lg:col-span-2 aspect-[21/9] glass-card rounded-2xl overflow-hidden relative group">
-                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                        style="background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1200');">
+                <!-- Project 2 (Square) -->
+                <div
+                    class="reveal lg:col-span-4 aspect-square glass-card rounded-[3rem] overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110"
+                        style="background-image: linear-gradient(to bottom, transparent, rgba(10,10,12,0.9)), url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=800');">
                     </div>
                     <div class="absolute inset-0 p-8 flex flex-col justify-end">
-                        <h3 class="text-2xl font-bold">E-commerce Evolution</h3>
-                        <p class="text-sm text-slate-400">Revolutionizing online shopping experiences.</p>
+                        <h3 class="text-2xl font-bold">Petal Analytics</h3>
+                    </div>
+                </div>
+
+                <!-- Project 3 (Square) -->
+                <div class="reveal lg:col-span-4 aspect-[4/5] glass-card rounded-[3rem] overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110"
+                        style="background-image: linear-gradient(to bottom, transparent, rgba(10,10,12,0.9)), url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=800');">
+                    </div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                        <h3 class="text-2xl font-bold">Dream Capture</h3>
+                    </div>
+                </div>
+
+                <!-- Project 4 (Wide) -->
+                <div
+                    class="reveal lg:col-span-8 aspect-[21/9] glass-card rounded-[3rem] overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
+                        style="background-image: linear-gradient(to bottom, transparent, rgba(10,10,12,0.9)), url('https://images.unsplash.com/photo-1519750783826-e2420f4d687f?auto=format&fit=crop&q=80&w=1200');">
+                    </div>
+                    <div class="absolute inset-0 p-10 flex flex-col justify-end">
+                        <h3 class="text-3xl font-bold">Soft Commerce</h3>
+                        <p class="text-sm text-slate-400 mt-2">감성 가득한 쇼핑 경험의 시작.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Expertise Section -->
-        <section id="skills" class="py-20">
-            <div class="reveal flex items-center justify-between mb-10">
-                <h2 class="text-3xl font-bold tracking-tight">Expertise</h2>
-                <div class="h-px flex-1 bg-white/10 mx-6 hidden md:block"></div>
-                <span class="text-xs text-slate-500 uppercase tracking-widest whitespace-nowrap">Technical
-                    Superpowers</span>
+        <!-- Profile / Expertice Section -->
+        <section id="skills" class="py-24">
+            <div class="reveal flex items-center justify-between mb-16">
+                <h2 class="text-4xl font-bold tracking-tight">Expertise</h2>
+                <div class="h-px flex-1 bg-white/5 mx-10 hidden md:block"></div>
+                <span class="text-xs text-primary font-bold uppercase tracking-[0.4em]">Skills & Tools</span>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <!-- Skill Capsules -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Skill 1 -->
                 <div
-                    class="reveal stagger-1 glass-card p-6 rounded-2xl border-l-4 border-l-primary flex flex-col gap-4">
-                    <span class="material-symbols-outlined text-primary text-3xl">terminal</span>
+                    class="reveal stagger-1 glass-card p-10 rounded-[3rem] border-t-2 border-t-primary/30 flex flex-col gap-6">
+                    <span class="material-symbols-outlined text-primary text-4xl">drawing</span>
                     <div>
-                        <h4 class="font-bold text-lg">Frontend</h4>
-                        <p class="text-xs text-slate-500 mt-1">React, Next.js, Framer Motion</p>
+                        <h4 class="font-bold text-2xl">Aesthetic UI</h4>
+                        <p class="text-sm text-slate-400 mt-3 leading-relaxed">Figma를 활용한 섬세한 인터페이스 디자인과 감성적인 무드보드 제작에
+                            능숙합니다.</p>
                     </div>
                 </div>
+                <!-- Skill 2 -->
                 <div
-                    class="reveal stagger-2 glass-card p-6 rounded-2xl border-l-4 border-l-accent-purple flex flex-col gap-4">
-                    <span class="material-symbols-outlined text-accent-purple text-3xl">database</span>
+                    class="reveal stagger-2 glass-card p-10 rounded-[3rem] border-t-2 border-t-accent-purple/30 flex flex-col gap-6">
+                    <span class="material-symbols-outlined text-accent-purple text-4xl">auto_awesome</span>
                     <div>
-                        <h4 class="font-bold text-lg">Backend</h4>
-                        <p class="text-xs text-slate-500 mt-1">Node.js, PostgreSQL, Redis</p>
+                        <h4 class="font-bold text-2xl">Creative Coding</h4>
+                        <h1 class="text-sm text-slate-400 mt-3 leading-relaxed">React, Next.js, Framer Motion을 사용하여 부드러운
+                            움직임을 구현합니다.</h1>
                     </div>
                 </div>
-                <div class="reveal stagger-3 glass-card p-6 rounded-2xl border-l-4 border-l-white flex flex-col gap-4">
-                    <span class="material-symbols-outlined text-white text-3xl">token</span>
-                    <div>
-                        <h4 class="font-bold text-lg">Web3</h4>
-                        <p class="text-xs text-slate-500 mt-1">Solidity, Ethers.js, Wagmi</p>
-                    </div>
-                </div>
+                <!-- Skill 3 -->
                 <div
-                    class="reveal stagger-4 glass-card p-6 rounded-2xl border-l-4 border-l-primary flex flex-col gap-4">
-                    <span class="material-symbols-outlined text-primary text-3xl">palette</span>
+                    class="reveal stagger-3 glass-card p-10 rounded-[3rem] border-t-2 border-t-white/20 flex flex-col gap-6">
+                    <span class="material-symbols-outlined text-white text-4xl">magic_button</span>
                     <div>
-                        <h4 class="font-bold text-lg">Design</h4>
-                        <p class="text-xs text-slate-500 mt-1">Figma, Motion Design, UI/UX</p>
+                        <h4 class="font-bold text-2xl">Product Design</h4>
+                        <p class="text-sm text-slate-400 mt-3 leading-relaxed">사용자의 마음을 움직이는 제품 기획과 브랜딩 스토리를 설계합니다.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="reveal mt-12 flex flex-wrap gap-2">
+            <div class="reveal mt-16 flex flex-wrap justify-center gap-3">
                 <span
-                    class="px-4 py-2 rounded-full border border-primary/30 bg-primary/5 text-primary text-xs font-bold glow-blue">React.js</span>
+                    class="px-6 py-2.5 rounded-full border border-primary/30 bg-primary/5 text-primary text-xs font-black glow-blue">React.js</span>
                 <span
-                    class="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-slate-400 text-xs font-bold">TypeScript</span>
+                    class="px-6 py-2.5 rounded-full border border-white/10 bg-white/5 text-slate-400 text-xs font-bold">TypeScript</span>
                 <span
-                    class="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-slate-400 text-xs font-bold">Three.js</span>
+                    class="px-6 py-2.5 rounded-full border border-white/10 bg-white/5 text-slate-400 text-xs font-bold">Figma</span>
                 <span
-                    class="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-slate-400 text-xs font-bold">Tailwind</span>
+                    class="px-6 py-2.5 rounded-full border border-accent-purple/30 bg-accent-purple/5 text-accent-purple text-xs font-black glow-purple">Framer
+                    Motion</span>
                 <span
-                    class="px-4 py-2 rounded-full border border-accent-purple/30 bg-accent-purple/5 text-accent-purple text-xs font-bold glow-purple">Next.js</span>
+                    class="px-6 py-2.5 rounded-full border border-white/10 bg-white/5 text-slate-400 text-xs font-bold">Next.js</span>
                 <span
-                    class="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-slate-400 text-xs font-bold">Node.js</span>
-                <span
-                    class="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-slate-400 text-xs font-bold">SwiftUI</span>
+                    class="px-6 py-2.5 rounded-full border border-white/10 bg-white/5 text-slate-400 text-xs font-bold">Tailwind
+                    CSS</span>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-20 mb-10">
-            <div class="reveal glass-card rounded-[2rem] p-8 lg:p-20 text-center relative overflow-hidden">
-                <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-primary/20 blur-[100px] rounded-full"></div>
-                <div class="absolute -top-20 -left-20 w-80 h-80 bg-accent-purple/10 blur-[100px] rounded-full"></div>
+        <section id="contact" class="py-24 mb-16">
+            <div class="reveal glass-card rounded-[4rem] p-12 lg:p-24 text-center relative overflow-hidden">
+                <div class="absolute -bottom-20 -right-20 w-[400px] h-[400px] bg-primary/20 blur-[120px] rounded-full">
+                </div>
+                <div
+                    class="absolute -top-20 -left-20 w-[400px] h-[400px] bg-accent-purple/15 blur-[120px] rounded-full">
+                </div>
 
-                <h2 class="text-4xl lg:text-7xl font-extrabold tracking-tight mb-6">
-                    Ready to start the <br><span class="text-primary italic">conversation?</span>
+                <h2 class="text-5xl lg:text-7xl font-extrabold tracking-tight mb-8">
+                    Let's Create <br><span class="text-primary italic-text">Magic</span> Together.
                 </h2>
-                <p class="text-slate-400 text-lg mb-12 max-w-xl mx-auto">
-                    Whether you have a specific project in mind or just want to explore possibilities, I'm here to build
-                    the extraordinary.
+                <p class="text-slate-300 text-lg lg:text-xl mb-16 max-w-xl mx-auto leading-relaxed">
+                    새로운 프로젝트 제안이나 커피 챗은 언제나 환영입니다.<br>
+                    섬세한 시선으로 당신의 브랜드에 생명력을 불어넣겠습니다.
                 </p>
-                <div class="flex flex-col md:flex-row justify-center gap-6">
-                    <button
-                        class="bg-white text-black px-10 py-5 rounded-2xl font-black text-xl hover:scale-105 transition-transform active:scale-95 shadow-2xl">
-                        hello@antigravity.dev
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                    <button id="email-btn"
+                        class="bg-white text-black px-12 py-6 rounded-3xl font-black text-2xl hover:scale-105 transition-transform active:scale-95 shadow-2xl hover:bg-primary hover:text-white">
+                        minalee01117@gmail.com
                     </button>
-                    <div class="flex justify-center items-center gap-6">
-                        <a href="#"
-                            class="w-14 h-14 rounded-2xl glass-card flex items-center justify-center hover:text-primary transition-colors">
-                            <span class="material-symbols-outlined">alternate_email</span>
-                        </a>
-                        <a href="#"
-                            class="w-14 h-14 rounded-2xl glass-card flex items-center justify-center hover:text-primary transition-colors">
+                    <div class="flex gap-4">
+                        <a href="https://github.com/minalee01117" target="_blank"
+                            class="w-16 h-16 rounded-3xl glass-card flex items-center justify-center hover:text-primary transition-colors text-2xl">
                             <span class="material-symbols-outlined">hub</span>
+                        </a>
+                        <a href="mailto:minalee01117@gmail.com"
+                            class="w-16 h-16 rounded-3xl glass-card flex items-center justify-center hover:text-primary transition-colors text-2xl">
+                            <span class="material-symbols-outlined">mail</span>
                         </a>
                     </div>
                 </div>
@@ -279,33 +286,33 @@
         </section>
     </main>
 
-    <!-- Footer Status (Desktop) -->
-    <footer class="hidden lg:block border-t border-white/5 py-10">
+    <!-- Footer -->
+    <footer class="hidden lg:block border-t border-white/5 py-12">
         <div
-            class="container mx-auto px-6 flex justify-between items-center text-xs text-slate-500 uppercase tracking-widest font-bold">
-            <div>© 2026 Antigravity. Built with Passion.</div>
-            <div class="flex items-center gap-2">
-                <span class="w-2 h-2 bg-green-500 rounded-full glow-blue"></span>
-                Currently available for projects
+            class="container mx-auto px-6 flex justify-between items-center text-xs text-slate-500 uppercase tracking-widest font-black">
+            <div>© 2026 Lee Mina. Crafted with Heart.</div>
+            <div class="flex items-center gap-3">
+                <span class="w-1.5 h-1.5 bg-primary rounded-full animate-pulse shadow-glow"></span>
+                Currently available for collaboration
             </div>
         </div>
     </footer>
 
-    <!-- Mobile Navigation (Floating Bar) -->
-    <div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-full px-6 flex justify-center lg:hidden">
-        <div class="glass-card rounded-full p-2 flex items-center gap-2 shadow-2xl border border-white/10">
+    <!-- Mobile Navigation -->
+    <div class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 w-full px-8 flex justify-center lg:hidden">
+        <div class="glass-card rounded-full p-2.5 flex items-center gap-3 shadow-3xl border border-white/10">
             <a href="#hero"
-                class="nav-item-active w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full glow-blue">
+                class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full glow-blue">
                 <span class="material-symbols-outlined">home</span>
             </a>
             <a href="#work" class="w-12 h-12 flex items-center justify-center opacity-40">
-                <span class="material-symbols-outlined">grid_view</span>
+                <span class="material-symbols-outlined">auto_awesome_motion</span>
             </a>
             <a href="#skills" class="w-12 h-12 flex items-center justify-center opacity-40">
-                <span class="material-symbols-outlined">person</span>
+                <span class="material-symbols-outlined">signature</span>
             </a>
             <a href="#contact" class="w-12 h-12 flex items-center justify-center opacity-40">
-                <span class="material-symbols-outlined">chat_bubble</span>
+                <span class="material-symbols-outlined">favorite</span>
             </a>
         </div>
     </div>
